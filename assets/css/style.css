@@ -78,10 +78,12 @@ body {
 	line-height: 1.7;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
 }
 
 body {
 	background-color: #F0EBE3;
+	position: relative
 }
 
 body.no-scroll {
@@ -118,8 +120,11 @@ a img {
 }
 
 img {
-	max-width: 100%;
-	max-height: 85%;
+	
+		max-width: 92%;
+		max-height: 78%;
+		border-radius: 50%;
+	
 }
 
 input,
@@ -195,7 +200,10 @@ h4 {
 
 h5,
 .lui-title {
-	font-size: 24px;
+	font-size: 55px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	margin-left: -5px;
 }
 
 h6 {
@@ -1649,14 +1657,21 @@ hr {
 
 .switcher-btn {
 	margin-right: 40px;
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	width: 25px;
-	height: 30px;
-	text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #29a587;
+    box-shadow: 5px 5px 0px 0px rgb(0 0 0 / 20%);
+    overflow: hidden; /* Ensure the content does not overflow */
 }
-
 .switcher-btn .sw-before, .switcher-btn .sw-after {
     position: absolute;
     top: 50%;
@@ -2215,12 +2230,12 @@ hr {
 
 .lui-gradient-top {
 	background-color: transparent;
-	background-image: linear-gradient(0deg, #FFFFFF 0%, #F0EBE3 100%);
+	background-image: linear-gradient(180deg, #FFFFFF 0%, #F0EBE3 100%);
 }
 
 .lui-gradient-bottom {
 	background-color: transparent;
-	background-image: linear-gradient(180deg, #FFFFFF 0%, #F0EBE3 100%);
+	background-image: linear-gradient(0deg, #FFFFFF 0%, #F0EBE3 100%);
 }
 
 .lui-gradient-center {
@@ -2437,13 +2452,13 @@ hr {
 .section.hero-started .slide img {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 66px;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
-	border-radius: 380px;
+	object-fit: cover; 
 	-webkit-border-radius: 380px;
 	z-index: 10;
+	border-radius: 50%;
 }
 
 .section.hero-started .slide .circle {
@@ -2508,7 +2523,7 @@ hr {
 
 .section.hero-started .title {
 	font-family: "Jost";
-	font-size: 90px;
+	font-size: 75px;
 	line-height: 1.2;
 	color: #FFF;
 	font-weight: 700;
@@ -2519,7 +2534,7 @@ hr {
 }
 
 .section.hero-started .lui-subtitle {
-	font-size: 15px;
+	font-size: 26px;
 }
 
 .section.hero-started .label strong,
@@ -2529,12 +2544,12 @@ hr {
 	font-weight: 700;
 	letter-spacing: 0;
 	text-transform: none;
-	margin-left: 10px;
+	margin-left: 0px;
 	color: #000;
 }
 
 .section.hero-started .description {
-	padding: 40px 0 40px 0;
+	padding: 8px 0 40px 0;
 	font-size: 18px;
 	max-width: 520px;
 }
@@ -3275,10 +3290,16 @@ hr {
 **/
 
 .pricing-items {
-	position: relative;
-	z-index: 2;
-	margin: 0 -20px;
+    position: relative;
+    z-index: 2;
+    margin: 0 -23px;
+    margin-top: 0px;
+    margin-right: -20px;
+    margin-bottom: 0px;
+    margin-left: -20px;
 }
+
+
 
 .pricing-col {
 	position: relative;
@@ -3371,7 +3392,7 @@ hr {
 .pricing-item .list ul li {
 	position: relative;
 	margin: 5px 0;
-	padding: 0 0 0 30px;
+	/* padding: 0 0 0 30px; */
 	list-style: none;
 }
 
@@ -3409,7 +3430,7 @@ hr {
 
 .js-testimonials .swiper-wrapper {
 	margin-bottom: 50px;
-	text-align: left;
+	text-align: justify;
 }
 
 .elementor-editor-active .js-testimonials .swiper-wrapper .swiper-slide .testimonials-item {
@@ -5382,7 +5403,7 @@ a.wp-block-button__link {
 		font-size: 40px;
 	}
 	.section.hero-started .lui-subtitle {
-		font-size: 13px;
+		font-size: 19px;
 	}
 	.section.hero-started .label strong, .section.hero-started .label b {
 		font-size: 24px;
